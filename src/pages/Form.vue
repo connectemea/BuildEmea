@@ -24,6 +24,13 @@
   </script>
   
   <style scoped>
+  .airtable-embed{
+    background: transparent;
+    border: none;
+    max-width: 700px;
+    border-radius: 10px;
+    margin: 10px;
+  }
   /* Add any component-specific styles here */
   </style>
   

@@ -1,0 +1,141 @@
+<template>
+    <div class="body">
+        <div class="whitespace">
+        </div>
+
+        <div class="section">
+
+            <div class="title">
+                <h1>
+                    Embark on a <span>coding quest</span>
+                    at BuildEMEA—exciting projects, limitless learning, and epic teamwork is
+                    <span>waiting for</span> you!
+                </h1>
+            </div>
+            <div class="center-section">
+                <div class="mockup"><img src="../../../public/MOCKUP-ipad.png" class="ipad-image"/></div>
+                <div>
+                    <p>
+                        BuildEMEA , organised by Connect in collaboration with IEDC, is the first ever month-long codefest
+                        conducted on EMEA campus or any Arts and Science college in that matter. This is a month completely
+                        dedicated to ideating, innovating, collaborating, and creating incredible projects. Our goal is to
+                        open a doorway to the world of programming,help them explore the possibilities and opportunities,
+                        and find their passion.Since this is a very beginner-friendly session, we invite people from all
+                        backgrounds. Participants will be provided with mentors, workshops, and the useful resources
+                        required.
+                        So join us for a fun-filled month of learning, growing, and working together!
+                    </p>
+                </div>
+            </div>
+            <div class="counts-section">
+                <div class="count">
+                    <h2>#26</h2>
+                    <p>Coding Days</p>
+                </div>
+                <div class="count">
+                    <h2>#10</h2>
+                    <p>Skilled Mentors</p>
+                </div>
+                <div class="count">
+                    <h2>#26</h2>
+                    <p>Coding Days</p>
+                </div>
+            </div>
+        </div>
+        <div class="whitespace">
+        </div>
+    </div>
+</template>
+<script>
+// no logics
+</script>
+<style scoped>
+.body {
+    background-color: #000;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0px 40px;
+    text-align: left;
+    margin-top: 50px;
+}
+
+.title>h1 {
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.title>h1>span {
+    color: #B90848;
+}
+
+.center-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 0px 20px;
+    gap: 8px;
+    margin: 20px 0px;
+
+}
+.mockup{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ipad-image{
+    max-width: 400px;
+}
+.counts-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 300px;
+    color: white;
+    width: 100%;
+    padding: 0px 20px;
+    margin: 10px 0px;
+    margin-bottom: 50px;
+}
+.count{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.count > h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #B90848;
+}
+.count > p{
+    font-weight: 600;
+}
+@media (max-width: 1350px) {
+    .body {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .whitespace {
+        display: none;
+    }
+
+}</style>
