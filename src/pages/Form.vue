@@ -48,6 +48,27 @@
   justify-content: center;
   padding: 10px;
 }
+
+/* For WebKit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ddd; /* Color of the scrollbar thumb */
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #1a1a1a; /* Color of the scrollbar track */
+}
+
+/* For Firefox */
+/* Note: Firefox supports a different syntax for scrollbar styling */
+* {
+    scrollbar-color: #B90848 #1a1a1a; /* thumb and track colors */
+    scrollbar-width: thin;
+}
   .airtable-embed{
     background: transparent;
     border: none;
