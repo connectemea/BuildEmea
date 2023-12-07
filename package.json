@@ -9,7 +9,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "deploy": "vite build && gh-pages -d dist",
-    "predeploy": "npm run build"  
+    "predeploy": "npm run build"
   },
   "dependencies": {
     "vue": "^3.3.8",
