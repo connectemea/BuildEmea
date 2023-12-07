@@ -14,7 +14,7 @@ const routes = [
   { path: '/participate', component: Form },
   { path: '/schedule', component: schedule },
   { path: '/demo', component: Texter },
-  { path: '/formhidebecuasehaveaissue', component: Form },
+  { path: '/formhide', component: Form },
   { path: '/:pathMatch(.*)*', component: NotFound },
 ];
 
