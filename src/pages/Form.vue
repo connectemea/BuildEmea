@@ -1,7 +1,13 @@
 <template>
     <div  class="fade-container">
+      
       <div style="height: 100vh;" class="body">
+        <header>
+          <router-link to="/">
 
+            <img src="../images/header-logo.png" class="logo"/>
+          </router-link>
+  </header>
       <iframe
         title="Airtable Embed"
         class="airtable-embed"
@@ -44,11 +50,21 @@
 .body{
   background-color: #000;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 10px;
 }
-
+header{
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.logo{
+  width: 100px;
+  cursor: pointer;
+}
 /* For WebKit browsers (Chrome, Safari) */
 ::-webkit-scrollbar {
     width: 12px;
