@@ -1,6 +1,6 @@
 {
   "name": "buildemea",
-  "homepage": "http://connectemea.github.io/BuildEmea",
+  "homepage": "https://connectemea.github.io/BuildEmea/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -8,8 +8,8 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "vite build && gh-pages -d dist",
+    "predeploy": "npm run build"  
   },
   "dependencies": {
     "vue": "^3.3.8",
