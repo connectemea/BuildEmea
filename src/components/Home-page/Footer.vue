@@ -11,13 +11,13 @@
                         <a href="mailto:connect@emeacollege.ac.in" target="_blank">
 
                             <div class="email">
-                                <img src="../../../public/messageemail.svg" alt="" class="icon" />
+                                <img src="../../images/messageemail.svg" alt="" class="icon" />
                                 <p>connect@emeacollege.ac.in</p>
                             </div>
                         </a>
 
                         <div class="phonenumber">
-                            <img src="../../../public/callphone.svg" alt="" class="icon" />
+                            <img src="../../images/callphone.svg" alt="" class="icon" />
                             <div>
                                 <a href="tel:+918113860921">
                                     <p>+91 81138 60921</p>
@@ -31,7 +31,7 @@
                     </div>
                     <div class="logo">
 
-                        <img src="../../../public/header-logo-new.png" alt="" />
+                        <img src="../../images/header-logo-new.png" alt="" />
 
                     </div>
                 </div>

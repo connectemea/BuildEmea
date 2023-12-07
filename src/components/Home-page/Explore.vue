@@ -71,7 +71,7 @@
                </div>
             </div>
             <div class="tech-image">
-               <img src="/public/tech-image.png" class="tech-logo" />
+               <img src="../../images/tech-image.png" class="tech-logo" />
             </div>
          </div>
       </div>

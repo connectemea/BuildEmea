@@ -6,7 +6,7 @@
         <div class="section" id="participate">
             <div class="card">
 
-                <!-- <img src="../../../public/participate-image.png" class="participate-image" /> -->
+                <!-- <img src="../../images/participate-image.png" class="participate-image" /> -->
                 <div class="card-contnet">
                     <p>Focus, INRERAC, CREATE.</p>
                     <h2>buildEMEA PROGRAMMING</h2>
@@ -26,9 +26,9 @@
 
             </div>
             <div class="community">
-                <div><img src="../../../public/tinkerhub-logo.png" class="community-logo" /></div>
-                <div><img src="../../../public/connect-logo.png" class="community-logo" /></div>
-                <div><img src="../../../public/iedc-logo.png" class="community-logo" /></div>
+                <div><img src="../../images/tinkerhub-logo.png" class="community-logo" /></div>
+                <div><img src="../../images/connect-logo.png" class="community-logo" /></div>
+                <div><img src="../../images/iedc-logo.png" class="community-logo" /></div>
             </div>
         </div>
 
@@ -62,7 +62,7 @@
     width: 100%;
     position: relative;
     height: 450px;
-    background-image: url("/public/participate-image.png");
+    background-image: url("../../images/participate-image.png");
     border-radius: 70px;
     background-size: cover;
 }

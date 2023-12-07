@@ -4,7 +4,7 @@
         </div>
 
         <div class="section">
-
+<img src="../../images/"/>
             <div class="title">
                 <h1>
                     Embark on a <span>coding quest</span>
@@ -13,7 +13,7 @@
                 </h1>
             </div>
             <div class="center-section">
-                <div class="mockup"><img src="/public/MOCKUP-ipad.png" class="ipad-image"/></div>
+                <div class="mockup"><img src="../../images//MOCKUP-ipad.png" class="ipad-image"/></div>
                 <div>
                     <p>
                         BuildEMEA , organised by Connect in collaboration with IEDC, is the first ever month-long codefest
