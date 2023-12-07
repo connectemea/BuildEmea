@@ -14,17 +14,40 @@ const navigateToForm = () => {
 // const navigateToNotion = () => {
 //   window.location.href = "https://www.google.com"; 
 // };
+import { ref, onMounted } from 'vue';
 
+// Optional: You can use a ref to conditionally apply the fade-in animation
+const shouldAnimate = ref(true);
+
+onMounted(() => {
+  // Optional: Disable animation on subsequent route changes
+  shouldAnimate.value = false;
+});
 </script>
 <template>
-  <div>
+ <div class="fade-container">
     <!-- <router-link to="/Form">Form</router-link> -->
 
     <Top />
     <Content />
     <Explore />
-    <Participate />
-    <Footer />
+    <Participate /> 
+     <Footer />
     <!-- <button @click="navigateToNotion">Notion</button> -->
   </div>
 </template>
+
+<style scoped>
+.fade-container {
+  animation: fade-in 2.5s ease-in-out;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+</style>
