@@ -23,7 +23,7 @@
                         Discover even more exciting details !
                      </p>
                      <hr />
-                     <a href="https://sharp-bobcat-af1.notion.site/Dashboard-92a9fc045b184f50a1709c34d1aeccfc"
+                     <a href="https://sharp-bobcat-af1.notion.site/BuildEMEA-7dc7f5135e434be8b40e64b9537f297f?pvs=4"
                         :target="'_blank'">
                         <p class="show-more">Show more
                            <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg"
@@ -212,4 +212,33 @@ hr {
    }
 
 }
+
+/* responsive iteams off */
+
+
+
+/* responsive designs */
+@media (max-width: 700px) {
+   .box-grid {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+.tech-image {
+   padding: 20px;
+   height: 300px;
+   width: 320px;
+   margin: auto;
+   padding-top: 0;
+}
+.tech-image img{
+   width: 100%;
+}
+.schedule-box {
+   padding-bottom: 0;
+}
+}
+
+
 </style>

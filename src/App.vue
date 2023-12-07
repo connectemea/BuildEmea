@@ -77,7 +77,7 @@ body{
   background-color: #8a0340;
 }
 
-@media (max-width: 700px) {
+/* @media (max-width: 700px) {
     .body{
         display: none;
 
@@ -87,7 +87,7 @@ body{
         text-align: center;
         margin-top: 80px;
     }
-   }
+   } */
 </style>
 
 

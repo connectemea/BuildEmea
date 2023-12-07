@@ -26,11 +26,11 @@
             </div>
             <div class="counts-section">
                 <div class="count">
-                    <h2>#26</h2>
+                    <h2>#21</h2>
                     <p>Coding Days</p>
                 </div>
                 <div class="count">
-                    <h2>#10</h2>
+                    <h2>#06</h2>
                     <p>Skilled Mentors</p>
                 </div>
                 <div class="count">
@@ -142,4 +142,56 @@
         display: none;
     }
 
-}</style>
+}
+
+
+/* responsive iteams off */
+
+
+
+/* responsive designs */
+@media (max-width: 700px) {
+   
+    .center-section {
+    display: grid;
+    grid-template-columns: 1fr ;
+    align-items: center;
+    padding: 0px 20px;
+    gap: 15px;
+    margin: 5px 0px;
+}
+.center-section p {
+padding-left: 20px ;
+}
+.title>h1 {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height:28px;
+    padding-left: 3px;
+}
+.counts-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    color: white;
+    width: 100%;
+    padding: 0px;
+    margin: 40px 0px;
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+.count>h2 {
+    font-size: 35px;
+}
+    /* desktop screen off */
+   
+}
+@media (max-width: 420px) {
+    .ipad-image {
+    max-width: 300px;
+}
+}
+</style>

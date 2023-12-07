@@ -23,7 +23,7 @@
 export default {
   data() {
     return {
-      airtableEmbedSrc: "https://airtable.com/embed/appU9be36Hoc4MSRY/pagiKGjledhDuoQgo/form",
+      airtableEmbedSrc: "https://airtable.com/apps59e0jyPALC9vi/shrjOa1kpcMMcH6v2",
       // airtableEmbedSrc: "https://sharp-bobcat-af1.notion.site/Dashboard-92a9fc045b184f50a1709c34d1aeccfc", notion 
     };
   },

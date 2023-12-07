@@ -1,4 +1,4 @@
-<!-- this page becuase of router didnt allow new pages or demo so.. -->
+<!-- this page becuase of router didnt allow new pages or demo like live server showing html so.. -->
 <!-- and now testing the hard code shecule page it styling -->
 <!-- And to see this page -> localhost:3000/demo -->
 <script setup>

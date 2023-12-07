@@ -160,4 +160,71 @@ header {
   position: fixed;
   right: 0;
 } */
+@media (max-width:710px) {
+  
+.grid-box {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: -10px;
+}
+.logo {
+  width: 120px;
+  margin-left: 22px;
+  cursor: pointer;
+
+}
+.border {
+  margin-left: 80px;
+  border-left: 5px solid #fff;
+  height: 100%;
+  padding: 0;
+  position: relative;
+  padding-top: 30px;
+}
+.border::after {
+  content: '';
+  position: fixed;
+  top: 0px;
+  right: 10px;
+  bottom: 0px;
+  width: 10%; /* Adjust the width of the background */
+  background-image: url('../images/buildEMEtext-respo.png'); /* Set your desired background image */
+  background-repeat: repeat-y;
+  background-position: right;
+  margin: 80px 30px;
+}
+.schedule-card {
+  margin-left: 20px;
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+}
+@media (max-width: 399px) {
+  .logo {
+  width: 120px;
+  margin-left: -5px;
+  cursor: pointer;
+
+}
+  .border {
+  margin-left: 50px;
+  border-left: 5px solid #fff;
+  height: 100%;
+  padding: 0;
+  position: relative;
+  padding-top: 30px;
+}
+.schedule-card {
+  margin-left: 10px;
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+}
 </style>
