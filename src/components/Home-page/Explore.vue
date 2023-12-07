@@ -19,11 +19,12 @@
                   </div>
                   <div class="content-info">
                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing
-                        elit, sed do eiusmod tempor incididunt ut labore etd
+
+                        Discover even more exciting details !
                      </p>
                      <hr />
-                     <a href="https://sharp-bobcat-af1.notion.site/Dashboard-92a9fc045b184f50a1709c34d1aeccfc" :target="'_blank'">
+                     <a href="https://sharp-bobcat-af1.notion.site/Dashboard-92a9fc045b184f50a1709c34d1aeccfc"
+                        :target="'_blank'">
                         <p class="show-more">Show more
                            <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg"
                               class="icon">
@@ -51,8 +52,7 @@
                   </div>
                   <div class="content-info">
                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing
-                        elit, sed do eiusmod tempor incididunt ut labore etd
+                        Keep up with our Timeline!
                      </p>
                      <hr />
                      <router-link to="/schedule">

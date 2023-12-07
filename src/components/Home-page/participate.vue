@@ -10,8 +10,8 @@
 </div>
                 <!-- <img src="../../images/participate-image.png" class="participate-image" /> -->
                 <div class="card-contnet">
-                    <p>Focus, INRERAC, CREATE.</p>
-                    <h2>buildEMEA PROGRAMMING</h2>
+                    <p>FOCUS, INTERACT, CREATE.</p>
+                    <h2>buildEMEA CODEFEST</h2>
                     <router-link to="/form" class="button">
 
                         Participate now
@@ -101,7 +101,7 @@
     font-size: 20px;
     margin-bottom: 5px;
     margin-top: -90px;
-    word-spacing: 55px;
+    word-spacing: 30px;
     font-size: 22px;
     font-weight: normal;
     text-transform: uppercase;

@@ -6,23 +6,21 @@
         <div class="section">
             <div class="title">
                 <h1>
-                    Embark on a <span>coding quest</span>
-                    at BuildEMEA—exciting projects, limitless learning, and epic teamwork is
-                    <span>waiting for</span> you!
+                    Are you ready to<span> build up</span> your coding skills?
+                    Together, let's <span> BuildEMEA</span>
+
                 </h1>
             </div>
             <div class="center-section">
-                <div class="mockup"><img src="../../images//MOCKUP-ipad.png" class="ipad-image"/></div>
+                <div class="mockup"><img src="../../images//MOCKUP-ipad.png" class="ipad-image" /></div>
                 <div>
                     <p>
-                        BuildEMEA , organised by Connect in collaboration with IEDC, is the first ever month-long codefest
-                        conducted on EMEA campus or any Arts and Science college in that matter. This is a month completely
-                        dedicated to ideating, innovating, collaborating, and creating incredible projects. Our goal is to
-                        open a doorway to the world of programming,help them explore the possibilities and opportunities,
-                        and find their passion.Since this is a very beginner-friendly session, we invite people from all
-                        backgrounds. Participants will be provided with mentors, workshops, and the useful resources
-                        required.
-                        So join us for a fun-filled month of learning, growing, and working together!
+                        <b>BuildEMEA</b> , organised by  <b>Connect</b> in collaboration with  <b>IEDC</b> and  <b>TinkerHub</b>, is the first ever
+                        month-long  <b>codefest</b> conducted on  <b>EMEA campus</b> or any Arts and Science college. This is
+                        a month completely dedicated to ideating, innovating, collaborating, and creating incredible
+                        projects. Our goal is to open a doorway to the world of programming,help them explore the
+                        possibilities and opportunities, and find their passion.  <b>Join us for a fun-filled month of learning,
+                        growing, and working together!</b>
                     </p>
                 </div>
             </div>
@@ -36,8 +34,8 @@
                     <p>Skilled Mentors</p>
                 </div>
                 <div class="count">
-                    <h2>#26</h2>
-                    <p>Coding Days</p>
+                    <h2>#08</h2>
+                    <p>Live Events</p>
                 </div>
             </div>
         </div>
@@ -93,14 +91,17 @@
     margin: 20px 0px;
 
 }
-.mockup{
+
+.mockup {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.ipad-image{
+
+.ipad-image {
     max-width: 350px;
 }
+
 .counts-section {
     display: flex;
     justify-content: space-around;
@@ -112,21 +113,25 @@
     margin: 10px 0px;
     margin-bottom: 50px;
 }
-.count{
+
+.count {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
 }
-.count > h2 {
+
+.count>h2 {
     font-size: 28px;
     font-weight: bold;
     color: #B90848;
 }
-.count > p{
+
+.count>p {
     font-weight: 600;
 }
+
 @media (max-width: 1350px) {
     .body {
         display: grid;

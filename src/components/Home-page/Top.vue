@@ -27,7 +27,7 @@
             </div>
             <div class="date">
                 <img src="../../images/Vectordate.svg" alt="" class="date-logo"/>
-                <p>07 DEC-05 JAN 2023</p>
+                <p>07 DEC-01 JAN 2024</p>
             </div>
         </div>
         <div>
