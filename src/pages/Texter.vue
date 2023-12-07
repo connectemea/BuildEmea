@@ -50,7 +50,6 @@ const navigateToForm = () => {
   border-left: 5px solid #fff;
   height: 100vh;
   padding: 0;
-  /* Remove default padding from the <ul> element */
   position: relative;
   padding-top: 50px;
 }
@@ -59,7 +58,6 @@ const navigateToForm = () => {
   position: relative;
   list-style-type: none;
   padding-left: 25px;
-  /* Adjust the space between the bullet point and the text */
   margin-left: -38px;
   display: flex;
   align-items: center;
@@ -67,18 +65,12 @@ const navigateToForm = () => {
 
 .border li::before {
   content: '';
-  /* Empty content to create a pseudo-element */
   display: inline-block;
   width: 20px;
-  /* Adjust the width of the filled circle */
   height: 20px;
-  /* Adjust the height of the filled circle */
   background-color: #ff005d;
-  /* Change the color of the filled circle */
   border-radius: 50%;
-  /* Make the filled circle round */
   margin-right: 10px;
-  /* Adjust the space between the filled circle and the text */
 }
 
 .schedule-card {
