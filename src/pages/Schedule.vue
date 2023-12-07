@@ -12,7 +12,8 @@ const router = useRouter();
 </script>
 
 <template>
-  <div>
+  <div class="fade-container">
+
     <ul class="border">
       <li v-for="(item, index) in scheduleData" :key="index">
         <div class="schedule-card">
@@ -27,6 +28,20 @@ const router = useRouter();
 </template>
 
 <style scoped>
+.fade-container {
+  animation: fade-in 2.5s ease-in-out;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0.1;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
 .border {
   margin-left: 200px;
   border-left: 5px solid #fff;
@@ -54,15 +69,16 @@ const router = useRouter();
   border-radius: 50%;
   margin-right: 10px;
 }
+
 .schedule-card {
-    margin-left: 50px;
-    display: grid;
-    grid-template-columns: auto;
-    justify-content: center;
-    align-items: center;
-    padding: 50px;
-  }
-  .schedule-card p {
-    padding: 0;
-  }
-</style>
+  margin-left: 50px;
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.schedule-card p {
+  padding: 0;
+}</style>

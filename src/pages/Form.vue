@@ -1,5 +1,7 @@
 <template>
-    <div style="height: 100vh;">
+    <div  class="fade-container">
+      <div style="height: 100vh;" class="body">
+
       <iframe
         title="Airtable Embed"
         class="airtable-embed"
@@ -11,6 +13,8 @@
         style="background: transparent; border: none;"
       ></iframe>
     </div>
+  </div>
+
   </template>
   
   <script>
@@ -18,12 +22,32 @@
     data() {
       return {
         airtableEmbedSrc: "https://airtable.com/embed/appU9be36Hoc4MSRY/pagiKGjledhDuoQgo/form",
+        // airtableEmbedSrc: "https://sharp-bobcat-af1.notion.site/Dashboard-92a9fc045b184f50a1709c34d1aeccfc", notion 
       };
     },
   };
   </script>
   
   <style scoped>
+  .fade-container {
+  animation: fade-in 2.5s ease-in-out;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.body{
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
   .airtable-embed{
     background: transparent;
     border: none;
