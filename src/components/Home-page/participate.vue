@@ -5,7 +5,9 @@
         </div>
         <div class="section" id="participate">
             <div class="card">
+<div class="overlay">
 
+</div>
                 <!-- <img src="../../images/participate-image.png" class="participate-image" /> -->
                 <div class="card-contnet">
                     <p>Focus, INRERAC, CREATE.</p>
@@ -66,7 +68,16 @@
     border-radius: 70px;
     background-size: cover;
 }
-
+.overlay{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    border-radius: 70px;
+    background-color: #FF005C;
+    opacity: 0.4;
+}
 /* .participate-image {
     top: 0;
     left: 0;

@@ -2,13 +2,16 @@
 <script setup>
 import { useRouter } from 'vue-router';
 import { scheduleData } from '../components/schedule-data/scheduleData.js';
+import { onMounted } from 'vue';
 
 const router = useRouter();
 
 // const navigateToForm = () => {
 //   router.push('/form');
 // };
-
+onMounted(() => {
+      window.scrollTo(0, 0);
+    });
 </script>
 
 <template>
@@ -33,7 +36,7 @@ const router = useRouter();
 
     </ul>
   <div class="name-image">
-<!-- <img src="" alt="logo"/> -->
+<img src="../images/buildEMEAtext-logo.png" alt="logo"/>
   </div>
 </div>
    
@@ -63,7 +66,7 @@ header{
 }
 .logo{
   width: 120px;
-  margin-left: 145px;
+  margin-left: 142px;
   cursor: pointer;
  
 }
@@ -114,5 +117,6 @@ header{
 }
 .name-image{
   position: relative;
+  width: 70%;
 }
 </style>

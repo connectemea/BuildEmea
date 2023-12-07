@@ -1,5 +1,7 @@
 <script setup>
 import { useRouter } from 'vue-router';
+
+
 </script>
 
 <template>
@@ -19,6 +21,7 @@ please open on desktop
     <div class="body">
 
       <router-view />
+      
     </div>
 
    
@@ -56,7 +59,23 @@ body{
     scrollbar-color: #B90848 #1a1a1a; /* thumb and track colors */
     scrollbar-width: thin;
 }
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #B90848;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none; /* Initially hide the button */
+}
 
+/* Show the button on hover */
+.back-to-top:hover {
+  background-color: #8a0340;
+}
 
 @media (max-width: 700px) {
     .body{
@@ -70,3 +89,8 @@ body{
     }
    }
 </style>
+
+
+
+
+
