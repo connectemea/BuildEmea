@@ -10,36 +10,39 @@ const router = useRouter();
 //   router.push('/form');
 // };
 onMounted(() => {
-      window.scrollTo(0, 0);
-    });
+  window.scrollTo(0, 0);
+});
 </script>
 
 <template>
   <div class="fade-container">
-     <header>
+    <header>
       <router-link to="/">
-        <img src="../images/header-logo.png" class="logo"/>
+        <img src="../images/header-logo.png" class="logo" />
 
       </router-link>
-    
-  </header>
-<div class="grid-box">
- 
-  <ul class="border">
-      <li v-for="(item, index) in scheduleData" :key="index">
-        <div class="schedule-card">
-          <h1> {{ item.Date }}</h1>
-          <p>{{ item.section }}</p>
 
-        </div>
-      </li>
+    </header>
+    <!-- <div class="grid-box"> -->
 
-    </ul>
-  <div class="name-image">
-<img src="../images/buildEMEAtext-logo.png" alt="logo"/>
-  </div>
-</div>
-   
+      <ul class="border">
+        <li v-for="(item, index) in scheduleData" :key="index">
+          <div class="schedule-card">
+            <h1> {{ item.Date }}</h1>
+            <p>{{ item.section }}</p>
+
+          </div>
+        </li>
+
+        <!-- <img src="../images/buildEMEAtext-logo.png" alt="logo" /> -->
+      </ul>
+      <!-- <div class="name-head"> -->
+        <!-- <div class="name-image"> -->
+
+        <!-- </div> -->
+      <!-- </div> -->
+    <!-- </div> -->
+
   </div>
 </template>
 
@@ -57,24 +60,28 @@ onMounted(() => {
     opacity: 1;
   }
 }
-header{
+
+header {
   height: 60px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   padding-top: 15px;
 }
-.logo{
+
+.logo {
   width: 120px;
   margin-left: 142px;
   cursor: pointer;
- 
+
 }
-.grid-box{
+
+.grid-box {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: -10px;
 }
+
 .border {
   margin-left: 200px;
   border-left: 5px solid #fff;
@@ -102,7 +109,19 @@ header{
   border-radius: 50%;
   margin-right: 10px;
 }
-
+.border::after {
+  content: '';
+  position: fixed;
+  top: 0px;
+  right: 10px;
+  bottom: 0px;
+  width: 60%; /* Adjust the width of the background */
+  background-image: url('../images/buildEMEAtext-logo.png'); /* Set your desired background color */
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  margin: 80px 30px;
+}
 .schedule-card {
   margin-left: 50px;
   display: grid;
@@ -114,9 +133,31 @@ header{
 
 .schedule-card p {
   padding: 0;
+  font-size: 14px;
 }
-.name-image{
+.schedule-card h1 {
+  padding: 0;
+  font-weight: 600;
+
+}
+
+/* .name-image {
   position: relative;
-  width: 70%;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: right;
+  padding: 20px;
+} */
+.name-image img{
+  display: none;
+  position: absolute;
+  top: 0px;
+
 }
+/* .name-head {
+  position: fixed;
+  right: 0;
+} */
 </style>
