@@ -13,8 +13,16 @@ const router = useRouter();
 
 <template>
   <div class="fade-container">
+     <header>
+      <router-link to="/">
+        <img src="../images/header-logo.png" class="logo"/>
 
-    <ul class="border">
+      </router-link>
+    
+  </header>
+<div class="grid-box">
+ 
+  <ul class="border">
       <li v-for="(item, index) in scheduleData" :key="index">
         <div class="schedule-card">
           <h1> {{ item.Date }}</h1>
@@ -24,6 +32,11 @@ const router = useRouter();
       </li>
 
     </ul>
+  <div class="name-image">
+<!-- <img src="" alt="logo"/> -->
+  </div>
+</div>
+   
   </div>
 </template>
 
@@ -41,14 +54,31 @@ const router = useRouter();
     opacity: 1;
   }
 }
-
+header{
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 15px;
+}
+.logo{
+  width: 120px;
+  margin-left: 145px;
+  cursor: pointer;
+ 
+}
+.grid-box{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: -10px;
+}
 .border {
   margin-left: 200px;
   border-left: 5px solid #fff;
   height: 100%;
   padding: 0;
   position: relative;
-  padding-top: 50px;
+  padding-top: 30px;
 }
 
 .border li {
@@ -81,4 +111,8 @@ const router = useRouter();
 
 .schedule-card p {
   padding: 0;
-}</style>
+}
+.name-image{
+  position: relative;
+}
+</style>
