@@ -1,14 +1,25 @@
 <template>
-    <div>
-      <h1>404 Not Found</h1>
-      <p>Sorry, the page you're looking for doesn't exist.</p>
-      <router-link to="/">Go to Home Page</router-link>
-    </div>
-  </template>
-  
-  <script>
-  export default {
-    // You can add additional logic or methods here
-  };
-  </script>
-  
+  <div class="fade-container">
+
+    <NotFoundComponent />
+  </div>
+</template>
+
+<script setup>
+import NotFoundComponent from "../components/NotFound/404.vue";
+</script>
+
+<style scoped>
+.fade-container {
+  animation: fade-in 2.1s ease-in-out;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+</style>
