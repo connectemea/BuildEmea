@@ -8,7 +8,7 @@
         <header class="header">
             <div class="header-left">
                 <router-link to="#">
-                    <img class="header-left-logo" src="/header-logo-new.png" alt=""/>
+                    <img class="header-left-logo" src="../../images/header-logo-new.png" alt=""/>
                 </router-link>
 
             </div>
@@ -20,18 +20,18 @@
             </div>
         </header>
         <div class="center-section">
-            <img class="head-logo" src="/buildEMEA-1.png"/>
+            <img class="head-logo" src="../../images/buildEMEA-1.png"/>
             <div class="location">
-                <img src="/Vectorlocation.svg" alt="" class="location-logo"/>
+                <img src="../../images/Vectorlocation.svg" alt="" class="location-logo"/>
                 <p>EMEA College of Arts and Science</p>
             </div>
             <div class="date">
-                <img src="/Vectordate.svg" alt="" class="date-logo"/>
+                <img src="../../images/Vectordate.svg" alt="" class="date-logo"/>
                 <p>07 DEC-05 JAN 2023</p>
             </div>
         </div>
         <div>
-            <img src="/image-game.png" alt="" class="game-image"/>
+            <img src="../../images/image-game.png" alt="" class="game-image"/>
 
         </div>
     </div>

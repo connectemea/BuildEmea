@@ -4,7 +4,6 @@
         </div>
 
         <div class="section">
-<img src="../../images/"/>
             <div class="title">
                 <h1>
                     Embark on a <span>coding quest</span>
