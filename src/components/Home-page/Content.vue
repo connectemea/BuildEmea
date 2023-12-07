@@ -4,7 +4,6 @@
         </div>
 
         <div class="section">
-
             <div class="title">
                 <h1>
                     Embark on a <span>coding quest</span>
@@ -13,7 +12,7 @@
                 </h1>
             </div>
             <div class="center-section">
-                <div class="mockup"><img src="../../../public/MOCKUP-ipad.png" class="ipad-image"/></div>
+                <div class="mockup"><img src="../../images//MOCKUP-ipad.png" class="ipad-image"/></div>
                 <div>
                     <p>
                         BuildEMEA , organised by Connect in collaboration with IEDC, is the first ever month-long codefest
@@ -90,7 +89,7 @@
     grid-template-columns: 1fr 1fr;
     align-items: center;
     padding: 0px 20px;
-    gap: 8px;
+    gap: 0px;
     margin: 20px 0px;
 
 }
@@ -100,7 +99,7 @@
     justify-content: center;
 }
 .ipad-image{
-    max-width: 400px;
+    max-width: 350px;
 }
 .counts-section {
     display: flex;

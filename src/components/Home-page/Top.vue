@@ -7,27 +7,31 @@
 
         <header class="header">
             <div class="header-left">
-                <img class="header-left-logo" src="../../../public/header-logo-new.png" alt=""/>
+                <router-link to="#">
+                    <img class="header-left-logo" src="../../images/header-logo-new.png" alt=""/>
+                </router-link>
+
             </div>
             <div class="header-right">
-                <p>Explore</p>
-                <p>Schedule</p>
-                <p>Participate</p>
+                
+                <router-link to="#explore" @click="scrollToSection('#explore')" class="router-link">Explore</router-link>
+      <router-link to="schedule"  class="router-link">Schedule</router-link>
+      <router-link to="#participate" @click="scrollToSection('#participate')" class="router-link">Participate</router-link>
             </div>
         </header>
         <div class="center-section">
-            <img class="head-logo" src="../../../public/buildEMEA-1.png"/>
+            <img class="head-logo" src="../../images/buildEMEA-1.png"/>
             <div class="location">
-                <img src="../../../public/Vectorlocation.svg" alt="" class="location-logo"/>
+                <img src="../../images/Vectorlocation.svg" alt="" class="location-logo"/>
                 <p>EMEA College of Arts and Science</p>
             </div>
             <div class="date">
-                <img src="../../../public/Vectordate.svg" alt="" class="date-logo"/>
+                <img src="../../images/Vectordate.svg" alt="" class="date-logo"/>
                 <p>07 DEC-05 JAN 2023</p>
             </div>
         </div>
         <div>
-            <img src="../../../public/image-game.png" alt="" class="game-image"/>
+            <img src="../../images/image-game.png" alt="" class="game-image"/>
 
         </div>
     </div>
@@ -38,7 +42,43 @@
 
 </template>
 <script>
-// no logics
+// no logics full chatgbt
+export default {
+  methods: {
+    // Function to smoothly scroll to a target section
+    scrollToSection(target) {
+      const element = document.querySelector(target);
+      if (element) {
+        this.scrollTo(element.offsetTop, 1000); // Adjust the duration (in milliseconds) as needed
+      }
+    },
+    // Function to scroll to a specific position with a smooth transition
+    scrollTo(to, duration) {
+      const start = window.scrollY;
+      const change = to - start;
+      const increment = 20;
+      let currentTime = 0;
+
+      const animateScroll = () => {
+        currentTime += increment;
+        const val = this.easeInOutQuad(currentTime, start, change, duration);
+        window.scrollTo(0, val);
+        if (currentTime < duration) {
+          setTimeout(animateScroll, increment);
+        }
+      };
+
+      animateScroll();
+    },
+    // Easing function for smooth scrolling
+    easeInOutQuad(t, b, c, d) {
+      t /= d / 2;
+      if (t < 1) return (c / 2) * t * t + b;
+      t--;
+      return (-c / 2) * (t * (t - 2) - 1) + b;
+    }
+  }
+};
 </script>
 <style scoped>
 .body {
@@ -71,6 +111,36 @@ flex: 1;
     align-items: center;
     width: 300px;
     color: white;
+}
+.router-link {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.router-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #f8ffdd;
+    transition: width 0.3s;
+}
+
+
+
+.router-link:hover::after {
+    width: 100%;
+}
+
+.router-link.active {
+    font-weight: bold; 
+}
+
+.router-link.active::after {
+    width: 100%;
 }
 
 /* main center content */
