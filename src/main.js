@@ -5,6 +5,7 @@ import App from './App.vue';
 import schedule from './pages/Schedule.vue';
 import Home from './pages/Home.vue';
 import Form from './pages/Form.vue';
+import Texter from './pages/Texter.vue';
 import NotFound from './pages/NotFound.vue';
 import { createRouter, createWebHistory } from 'vue-router';
 
@@ -12,6 +13,7 @@ const routes = [
   { path: '/', component: Home },
   { path: '/participate', component: Form },
   { path: '/schedule', component: schedule },
+  { path: '/demo', component: Texter },
   { path: '/form', component: Form },
   { path: '/:pathMatch(.*)*', component: NotFound },
 ];

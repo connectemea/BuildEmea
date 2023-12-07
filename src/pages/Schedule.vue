@@ -1,21 +1,27 @@
 <!-- Your main component file -->
 <script setup>
 import { useRouter } from 'vue-router';
-import { setup as scheduleCardSetup } from '../components/schedule-data/ScheduleCard.vue'; // Adjust the path accordingly
-const router = useRouter();
-const { scheduleData } = scheduleCardSetup();
+import { scheduleData } from '../components/schedule-data/scheduleData.js';
 
-const navigateToForm = () => {
-  router.push('/form');
-};
+const router = useRouter();
+
+// const navigateToForm = () => {
+//   router.push('/form');
+// };
+
 </script>
 
 <template>
   <div>
     <ul class="border">
-      <li v-for="(schedule, index) in scheduleData" :key="index">
-        <ScheduleCard :title="schedule.title" :description="schedule.description" />
+      <li v-for="(item, index) in scheduleData" :key="index">
+        <div class="schedule-card">
+          <h1> {{ item.Date }}</h1>
+          <p>{{ item.section }}</p>
+
+        </div>
       </li>
+
     </ul>
   </div>
 </template>
@@ -24,7 +30,7 @@ const navigateToForm = () => {
 .border {
   margin-left: 200px;
   border-left: 5px solid #fff;
-  height: 100vh;
+  height: 100%;
   padding: 0;
   position: relative;
   padding-top: 50px;
@@ -48,4 +54,15 @@ const navigateToForm = () => {
   border-radius: 50%;
   margin-right: 10px;
 }
+.schedule-card {
+    margin-left: 50px;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+  }
+  .schedule-card p {
+    padding: 0;
+  }
 </style>
