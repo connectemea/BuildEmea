@@ -126,7 +126,7 @@ const scrollToTop = () => {
 
 <style scoped>
 .body {
-    background-color: #111010;
+    background-color: #312c2c;
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     border-top-left-radius: 50px;
@@ -313,110 +313,118 @@ template {
 /* responsive designs */
 @media (max-width: 750px) {
     .box-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 20px;
-    gap: 0px;
-    background-color: #111010;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 20px;
+        gap: 0px;
+        background-color: #111010;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+    }
+
+    .socialmedia-info {
+        display: flex;
+        justify-content: flex-start;
+        gap: 15px;
+        align-items: flex-start;
+        width: 100%;
+        margin-left: 1px;
+        margin-top: -5px;
+    }
+
+    .socialmedia-info>a>svg {
+        width: 25px;
+        height: auto;
+        transition: all 0.3s ease-in-out;
+
+    }
+
+    .socialmedia-info>.router-link>svg {
+        width: 25px;
+        height: auto;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .logo>img {
+        width: 140px;
+        height: auto;
+    }
+
+    .email,
+    .phonenumber {
+        margin: 5px 0px;
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        font-size: 15px;
+    }
+
+    .back-to-top-button {
+        background-color: #333;
+        position: fixed;
+        bottom: 10px;
+        right: 20px;
+        background-color: #B90848;
+        color: white;
+        padding: 5px 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        z-index: 10;
+    }
+
 }
 
-.socialmedia-info {
-    display: flex;
-    justify-content: flex-start;
-    gap: 15px;
-    align-items: flex-start;
-    width: 100%;
-    margin-left: 1px;
-    margin-top: -5px;
-}
-
-.socialmedia-info>a>svg {
-    width: 25px;
-    height: auto;
-    transition: all 0.3s ease-in-out;
-
-}
-
-.socialmedia-info>.router-link>svg {
-    width: 25px;
-    height: auto;
-    transition: all 0.3s ease-in-out;
-}
-.logo>img {
-    width: 140px;
-    height: auto;
-}
-.email,
-.phonenumber {
-    margin: 5px 0px;
-    display: flex;
-    gap: 15px;
-    align-items: center;
-    font-size: 15px;
-}
-.back-to-top-button {
-    background-color: #333;
-    position: fixed;
-    bottom: 10px;
-    right: 20px;
-    background-color: #B90848;
-    color: white;
-    padding: 5px 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    z-index: 10;
-}
-
-}
 @media (max-width: 450px) {
 
-.logo > img {
-    width: 100px;
-    height: auto;
-}
-.icon {
-    width: 25px;
-    height: auto;
-}
-.socialmedia-info {
-    display: flex;
-    justify-content: flex-start;
-    gap: 15px;
-    align-items: flex-start;
-    width: 100%;
-    margin-left: 5px;
-    margin-top: -5px;
-}
+    .logo>img {
+        width: 100px;
+        height: auto;
+    }
 
-.socialmedia-info>a>svg {
-    width: 25px;
-    height: auto;
-    transition: all 0.3s ease-in-out;
+    .icon {
+        width: 25px;
+        height: auto;
+    }
 
-}
+    .socialmedia-info {
+        display: flex;
+        justify-content: flex-start;
+        gap: 15px;
+        align-items: flex-start;
+        width: 100%;
+        margin-left: 5px;
+        margin-top: -5px;
+    }
 
-.socialmedia-info>.router-link>svg {
-    width: 25px;
-    height: auto;
-    transition: all 0.3s ease-in-out;
-}
-.logo>img {
-    width: 100px;
-    height: auto;
-}
-.box-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 10px;
-    gap: 20px;
-    background-color: #111010;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
-    padding-top: 20px;
-    padding-left: 20px;
-}
+    .socialmedia-info>a>svg {
+        width: 25px;
+        height: auto;
+        transition: all 0.3s ease-in-out;
+
+    }
+
+    .socialmedia-info>.router-link>svg {
+        width: 25px;
+        height: auto;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .logo>img {
+        width: 100px;
+        height: auto;
+    }
+
+    .box-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 10px;
+        gap: 20px;
+        background-color: #111010;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        padding-top: 20px;
+        padding-left: 20px;
+    }
 }
 </style>

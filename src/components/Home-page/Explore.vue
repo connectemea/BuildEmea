@@ -237,11 +237,9 @@ hr {
 }
 .schedule-box {
    padding-bottom: 0;
+   z-index: 2;
 }
-.tech-image{
-   visibility: hidden;
-   height: 20px;
-}
+
 }
 
 
