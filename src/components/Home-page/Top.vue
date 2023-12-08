@@ -271,7 +271,7 @@ export default {
 
 /* responsive iteams off */
 .header-right--responsive {
-    display: flex;
+    display: none;
     align-items: center;
     font-weight: 600;
 }
@@ -285,13 +285,13 @@ export default {
     border-radius: 10px;
     right: 0;
     opacity: 0;
-    transform: translateX(100%);
+    transform: translateY(-100%);
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .nav-links.active {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateY(0);
 }
 
 
@@ -323,6 +323,7 @@ export default {
     }
 
     .header-right--responsive {
+        display: flex;
         flex-direction: column;
         z-index: 1;
     }
