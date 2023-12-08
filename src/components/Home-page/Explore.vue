@@ -239,7 +239,8 @@ hr {
    padding-bottom: 0;
 }
 .tech-image{
-   display: none;
+   visibility: hidden;
+   height: 20px;
 }
 }
 
