@@ -188,7 +188,7 @@
 
 
 /* responsive designs */
-@media (max-width: 700px) {
+@media (max-width: 750px) {
     .card {
     display: flex;
     flex-direction: column;

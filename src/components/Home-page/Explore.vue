@@ -218,7 +218,7 @@ hr {
 
 
 /* responsive designs */
-@media (max-width: 700px) {
+@media (max-width: 750px) {
    .box-grid {
    display: flex;
    flex-direction: column;

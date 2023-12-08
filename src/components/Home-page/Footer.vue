@@ -311,7 +311,7 @@ template {
 
 
 /* responsive designs */
-@media (max-width: 700px) {
+@media (max-width: 750px) {
     .box-grid {
     display: grid;
     grid-template-columns: 1fr;

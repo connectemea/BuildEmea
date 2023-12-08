@@ -150,7 +150,7 @@
 
 
 /* responsive designs */
-@media (max-width: 700px) {
+@media (max-width: 750px) {
    
     .center-section {
     display: grid;

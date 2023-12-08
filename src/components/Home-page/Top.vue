@@ -317,7 +317,7 @@ export default {
 }
 
 /* responsive designs */
-@media (max-width: 700px) {
+@media (max-width: 750px) {
     .nav-button {
         display: block;
     }
@@ -375,6 +375,12 @@ export default {
         margin: 5px;
         padding: 0;
     }
+
+.header-left-logo {
+    width: 105px;
+    height: auto;
+    padding: 10px;
+}
 }
 
 @media (max-width: 450px) {
@@ -382,6 +388,11 @@ export default {
         width: 250px;
     }
 
+    .header-left-logo {
+    width: 90px;
+    height: auto;
+    padding: 10px;
+}
     .location {
         display: flex;
         justify-content: center;
