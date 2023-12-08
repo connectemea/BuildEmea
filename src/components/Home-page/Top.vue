@@ -285,7 +285,7 @@ export default {
     border-radius: 10px;
     right: 0;
     opacity: 0;
-    transform: translateY(-100%);
+    transform: translateY(-150%);
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 

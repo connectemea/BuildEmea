@@ -126,7 +126,7 @@ const scrollToTop = () => {
 
 <style scoped>
 .body {
-    background-color: #312c2c;
+    background-color: #111010;
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     border-top-left-radius: 50px;
