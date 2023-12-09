@@ -72,7 +72,7 @@ export default {
             // Check if the click is outside the navigation links, the nav-button, and the nav-card
             const isNavButton = this.$refs.navButton.contains(event.target);
             const isNavLinks = this.$refs.navLinks.contains(event.target);
-            const isNavCard = this.$refs.navCard.contains(event.target);
+           const isNavCard = this.$refs.navCard.contains(event.target);
 
             if (!isNavButton && !isNavLinks && !isNavCard) {
                 this.isNavActive = false;
@@ -419,4 +419,15 @@ export default {
         height: auto;
         margin-right: 12px;
     }
-}</style>
+}
+@media (max-width: 360px) {
+    .card-contnet>p {
+        margin-top: -10px;
+        word-spacing: 8px;
+       
+    }
+}
+.location {
+    font-size: 14px;
+}
+</style>

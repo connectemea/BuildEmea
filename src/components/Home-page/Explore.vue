@@ -156,6 +156,7 @@
 .content-info {
    text-align: left;
    padding: 10px;
+   color: #fff;
 }
 
 hr {
@@ -172,6 +173,7 @@ hr {
    align-items: center;
    cursor: pointer;
    transition: all 0.3s ease-in-out;
+   color: #fff;
 }
 
 .show-more:hover {
@@ -199,7 +201,9 @@ hr {
    height: 100%;
 
 }
-
+.title-head{
+   color: #fff;
+}
 @media (max-width: 1350px) {
    .body {
       display: grid;
@@ -231,6 +235,7 @@ hr {
    width: 320px;
    margin: auto;
    padding-top: 0;
+   margin-top: -10px;
 }
 .tech-image img{
    width: 100%;

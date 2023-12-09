@@ -134,11 +134,12 @@ header {
 .schedule-card p {
   padding: 0;
   font-size: 14px;
+  color: #fff;
 }
 .schedule-card h1 {
   padding: 0;
   font-weight: 600;
-
+  color: #fff;
 }
 
 /* .name-image {
@@ -200,6 +201,7 @@ header {
   justify-content: center;
   align-items: center;
   padding: 50px;
+  color: #fff;
 }
 
 }
