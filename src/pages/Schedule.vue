@@ -26,7 +26,7 @@ onMounted(() => {
     <!-- <div class="grid-box"> -->
 
       <ul class="border">
-        <li v-for="(item, index) in scheduleData" :key="index">
+        <li v-for="(item, index) in scheduleData" :key="index" :class="{  'completed': item.status === '1', 'not-completed': item.status === '0' }">
           <div class="schedule-card">
             <h1> {{ item.Date }}</h1>
             <p>{{ item.section }}</p>
@@ -73,7 +73,7 @@ header {
   width: 120px;
   margin-left: 142px;
   cursor: pointer;
-
+z-index: 1;
 }
 
 .grid-box {
@@ -89,13 +89,14 @@ header {
   padding: 0;
   position: relative;
   padding-top: 30px;
+  margin-top: 1.2px;
 }
 
 .border li {
   position: relative;
   list-style-type: none;
   padding-left: 25px;
-  margin-left: -38px;
+  margin-left: -37.7px;
   display: flex;
   align-items: center;
 }
@@ -105,9 +106,17 @@ header {
   display: inline-block;
   width: 20px;
   height: 20px;
-  background-color: #ff005d;
   border-radius: 50%;
   margin-right: 10px;
+}
+.completed::before {
+  border: 2px solid  #C88D94;
+  background-color:  #C88D94;
+}
+.not-completed::before {
+  border: 2px solid #ff005d;
+  background-color: #ff005d;
+
 }
 .border::after {
   content: '';

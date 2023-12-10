@@ -31,7 +31,7 @@
                                 fill="white" />
                         </svg>
 
-                        jion Discord
+                        join Discord
 
                     </a>
 
@@ -153,7 +153,7 @@
 }
 
 .card-contnet>.button-b {
-    background-color: #2a3bfa;
+    background-color: #5865F2;
     border: none;
     padding: 0px 25px;
     border-radius: 15px;
@@ -172,7 +172,7 @@
 
 
 .card-contnet>.button-b:hover {
-    background-color: #5865F2;
+    background-color: #3c4beb;
     color: #fff;
 }
 

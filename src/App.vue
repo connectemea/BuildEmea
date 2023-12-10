@@ -42,11 +42,14 @@ body{
 /* For WebKit browsers (Chrome, Safari) */
 ::-webkit-scrollbar {
     width: 12px;
+    cursor: pointer;
+
 }
 
 ::-webkit-scrollbar-thumb {
     background-color: #ddd; /* Color of the scrollbar thumb */
     border-radius: 6px;
+    cursor: pointer;
 }
 
 ::-webkit-scrollbar-track {

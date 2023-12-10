@@ -298,6 +298,7 @@ export default {
 .nav-icon {
     width: 30px;
     height: 3px;
+    border-radius: 15px;
     background-color: #fff;
     margin: 6px 0;
     transition: 0.4s;
@@ -310,9 +311,13 @@ export default {
     margin: 10px;
     margin-top: 1px;
     border-radius: 10px;
+    padding: 3px 10px;
+
 }
 .responsive-nav-li:hover{
-    background-color: #B90848;
+    /* background-color: #f8ffdd; */
+    color: #edf7c7;
+
     cursor: pointer;
 }
 
@@ -320,6 +325,7 @@ export default {
 @media (max-width: 750px) {
     .nav-button {
         display: block;
+        cursor: pointer;
     }
 
     .header-right--responsive {
@@ -343,7 +349,6 @@ export default {
     }
 
     .nav-links:hover {
-        background-color: #B90848;
         cursor: pointer;
     }
 
