@@ -129,7 +129,7 @@
 
 }
 .closed-msg {
-    font-size: 15px;
+    font-size: 25px;
     font-weight: 600;
     color: #e3ff73;
     text-shadow: 3px 3px 5px #edf7c7; /* Updated text shadow with increased values */
