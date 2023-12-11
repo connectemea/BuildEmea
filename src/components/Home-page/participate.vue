@@ -122,14 +122,14 @@
 }
 
 .card-contnet>h2 {
-    font-size: 30px;
+    font-size: 2rem;
     font-weight: 600;
     margin-bottom: 50px;
     word-spacing: 10px;
 
 }
 .closed-msg {
-    font-size: 25px;
+    font-size: 36px;
     font-weight: 600;
     color: #e3ff73;
     text-shadow: 3px 3px 5px #edf7c7; /* Updated text shadow with increased values */
