@@ -315,6 +315,23 @@
         height: auto;
         margin: 0px;
     }
+    .closed-msg {
+    font-size: 20px;
+    font-weight: 600;
+    color: #e3ff73;
+    text-shadow: 3px 3px 5px #edf7c7; /* Updated text shadow with increased values */
+    text-transform: capitalize;
+    text-align: center;
+}
+.card-contnet {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    /* margin: 10px ; */
+    margin-bottom: 10px;
+}
 }
 @media (max-width: 360px) {
     .card-contnet>p {
