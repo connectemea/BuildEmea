@@ -5,6 +5,7 @@ import Content from '../components/Home-page/Content.vue';
 import Explore from '../components/Home-page/Explore.vue';
 import Participate from '../components/Home-page/participate.vue';
 import Footer from '../components/Home-page/Footer.vue';
+import ProjectCard from '../components/Home-page/ProjectCard.vue';
 import { ref, onMounted, onBeforeUnmount } from 'vue';
 
 const shouldAnimate = ref(true);
@@ -54,6 +55,7 @@ onMounted(() => {
     <Content />
     <Explore />
     <Participate /> 
+    <ProjectCard />
      <Footer />
      <!-- <button @click="scrollToTop" class="back-to-top" v-show="shouldShowBackToTop">
       Back to Top

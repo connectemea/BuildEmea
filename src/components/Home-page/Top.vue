@@ -1,7 +1,7 @@
 <template>
     <div class="body">
-        <div class="whitespace">
-        </div>
+        <!-- <div class="whitespace">
+        </div> -->
         <div class="section">
 
             <header class="header">
@@ -16,6 +16,7 @@
                     <router-link to="#explore" @click="scrollToSection('#explore')"
                         class="router-link">Explore</router-link>
                     <router-link to="schedule" class="router-link">Schedule</router-link>
+                    <router-link to="projects" class="router-link">Projects</router-link>
                     <router-link to="#participate" @click="scrollToSection('#participate')"
                         class="router-link">Participate</router-link>
                 </div>
@@ -29,6 +30,8 @@
                     <div class="nav-links" :class="{ active: isNavActive }" ref="navLinks">
                         <router-link to="#explore" @click="scrollToSection('#explore')" class="responsive-nav-li">Explore</router-link>
                         <router-link to="schedule" class="responsive-nav-li">Schedule</router-link>
+                        <router-link to="projects" class="responsive-nav-li">Projects</router-link>
+                        <router-link to="winners" class="responsive-nav-li">Winners</router-link>
                         <router-link to="#participate" @click="scrollToSection('#participate')" class="responsive-nav-li">Participate</router-link>
                     </div>
                 </div>
@@ -50,8 +53,8 @@
             </div>
         </div>
 
-        <div class="whitespace">
-        </div>
+        <!-- <div class="whitespace">
+        </div> -->
     </div>
 </template>
 <script>
@@ -134,9 +137,14 @@ export default {
 .body {
     background-color: #B90848;
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-}
+    /* grid-template-columns: 1fr 3fr 1fr; */
 
+}
+.section{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
 
 /* header */
 .header {

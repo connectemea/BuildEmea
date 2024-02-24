@@ -1,8 +1,8 @@
 <template>
     <div class="body">
 
-        <div class="whitespace">
-        </div>
+        <!-- <div class="whitespace">
+        </div> -->
         <div class="section" id="participate">
             <div class="card">
                 <div class="overlay">
@@ -46,8 +46,8 @@
             </div>
         </div>
 
-        <div class="whitespace">
-        </div>
+        <!-- <div class="whitespace">
+        </div> -->
     </div>
 </template>
 <script></script>
@@ -56,7 +56,9 @@
 .body {
     background-color: #000;
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
+    max-height: auto;
+
+    /* grid-template-columns: 1fr 3fr 1fr; */
 }
 
 .section {
@@ -66,19 +68,24 @@
     /* align-items: center; */
     color: white;
     padding: 10px 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+
 }
 
 .card {
     display: flex;
     flex-direction: column;
-    border-radius: 20px;
     padding: 20px;
     width: 100%;
     position: relative;
     height: 450px;
     background-image: url("../../images/participate-image.png");
-    border-radius: 70px;
     background-size: cover;
+    border-radius: 60px;
+
+
 }
 
 .overlay {
@@ -87,7 +94,7 @@
     left: 0px;
     right: 0px;
     bottom: 0px;
-    border-radius: 70px;
+    border-radius: 60px;
     background-color: #FF005C;
     opacity: 0.3;
 }
@@ -242,16 +249,15 @@
 
 /* responsive designs */
 @media (max-width: 750px) {
+   
     .card {
         display: flex;
         flex-direction: column;
-        border-radius: 20px;
         padding: 20px;
         width: 100%;
         position: relative;
         height: 300px;
         background-image: url("../../images/participate-image.png");
-        border-radius: 50px;
         background-size: cover;
     }
 
@@ -261,7 +267,7 @@
         left: 0px;
         right: 0px;
         bottom: 0px;
-        border-radius: 50px;
+        border-radius: 60px;
         background-color: #FF005C;
         opacity: 0.3;
     }
@@ -339,5 +345,6 @@
         word-spacing: 8px;
        
     }
+    
 }
 </style>

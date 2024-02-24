@@ -1,8 +1,8 @@
 <template>
    <div class="body">
-      <div class="whitespace">
+      <!-- <div class="whitespace">
 
-      </div>
+      </div> -->
       <div class="section" id="explore">
          <div class="box-grid">
 
@@ -71,13 +71,28 @@
                </div>
             </div>
             <div class="tech-image">
-               <img src="../../images/tech-image.png" class="tech-logo" />
+               <div class="tech-logo">
+                  <video class="tech-video" loop autoplay muted>
+                     <source src="../../assets/coding.mp4" type="video/mp4">
+                     <img src="../../images/tech-image.png" class="tech-logo" />
+                  </video>
+                  <video class="tech-video responsive" loop autoplay muted>
+                     <source src="../../assets/coding.mp4" type="video/mp4">
+                     <img src="../../images/tech-image.png" class="tech-logo" />
+                  </video>
+                  <video class="tech-video responsive" loop autoplay muted>
+                     <source src="../../assets/coding.mp4" type="video/mp4">
+                     <img src="../../images/tech-image.png" class="tech-logo" />
+                  </video>
+
+               </div>
             </div>
+
          </div>
       </div>
-      <div class="whitespace">
+      <!-- <div class="whitespace">
 
-      </div>
+      </div> -->
    </div>
 </template>
 <script>
@@ -96,7 +111,8 @@
 .body {
    background-color: #000;
    display: grid;
-   grid-template-columns: 1fr 3fr 1fr;
+
+   /* grid-template-columns: 1fr 3fr 1fr; */
 }
 
 .box-grid {
@@ -104,6 +120,11 @@
    grid-template-columns: 1fr 1fr;
    align-items: center;
    justify-content: center;
+   overflow: hidden;
+   width: 100%;
+   max-width: 1200px;
+   margin: auto;
+
 }
 
 .redirect-boxs {
@@ -183,6 +204,10 @@ hr {
 .show-more:hover>.icon>path {
    fill: #e7f0c4;
 }
+.show-more >.icon>path {
+   transition: all 0.3s ease-in-out;
+
+}
 
 .icon {
    width: 20px;
@@ -192,18 +217,30 @@ hr {
 }
 
 .tech-image {
-   padding: 20px;
-   height: 95%;
+   padding: 10px;
+   height: 90%;
+   overflow: hidden !important;
+   margin: auto;
 }
 
 .tech-logo {
-   border-radius: 60px;
-   height: 100%;
+   border-radius: 10px;
+   height: fit-content;
+   overflow: hidden;
+   max-width: 560px;
+   max-height: 500px;
 
 }
-.title-head{
+
+.tech-video {
+   object-fit: cover;
+   overflow: hidden;
+}
+
+.title-head {
    color: #fff;
 }
+
 @media (max-width: 1350px) {
    .body {
       display: grid;
@@ -219,33 +256,54 @@ hr {
 
 /* responsive iteams off */
 
-
+.responsive {
+   display: initial;
+}
 
 /* responsive designs */
 @media (max-width: 750px) {
+   .responsive {
+      display: none;
+   }
+
    .box-grid {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-}
-.tech-image {
-   padding: 20px;
-   height: 300px;
-   width: 320px;
-   margin: auto;
-   padding-top: 0;
-   margin-top: -10px;
-}
-.tech-image img{
-   width: 100%;
-}
-.schedule-box {
-   padding-bottom: 0;
-   z-index: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+   }
+
+   .tech-image {
+      padding: 10px;
+      height: 300px;
+      width: 380px;
+      margin: auto;
+      padding-top: 0;
+   }
+
+   .tech-image img {
+      width: 100%;
+   }
+
+   .schedule-box {
+      padding-bottom: 0;
+      z-index: 2;
+   }
+
+   .tech-logo {
+      width: 360px;
+   }
 }
 
+@media (max-width: 400px) {
+  
+   .tech-logo {
+      border-radius: 10px;
+      height: fit-content;
+      overflow: hidden;
+      width: 330px;
+      margin: auto;
+   }
+
 }
-
-
 </style>

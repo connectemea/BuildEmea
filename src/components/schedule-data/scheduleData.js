@@ -11,7 +11,7 @@ export const scheduleData = [
   { Date: '14 December 2023', section: 'Web Dovelepment', status: '1' },
   { Date: '21 December 2023', section: 'Project Tracking', status: '1' },
   { Date: '01 January 2024', section: 'Final Project Submission', status: '1' },
-  { Date: 'Coming soon', section: 'Winner Selection', status: '0' },
+  { Date: '19 February 2024 ', section: 'Winner Selection', status: '1' },
 ];
 
 // status 1 => completed

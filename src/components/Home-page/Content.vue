@@ -1,7 +1,7 @@
 <template>
     <div class="body">
-        <div class="whitespace">
-        </div>
+        <!-- <div class="whitespace">
+        </div> -->
 
         <div class="section">
             <div class="title">
@@ -39,8 +39,8 @@
                 </div>
             </div>
         </div>
-        <div class="whitespace">
-        </div>
+        <!-- <div class="whitespace">
+        </div> -->
     </div>
 </template>
 <script>
@@ -50,7 +50,8 @@
 .body {
     background-color: #000;
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
+
+    /* grid-template-columns: 1fr 3fr 1fr; */
 }
 
 .section {
@@ -59,6 +60,10 @@
     justify-content: center;
     align-items: center;
     color: white;
+    width: 100%;
+    max-width: 1200px ;
+    margin: auto;
+
 }
 
 .title {

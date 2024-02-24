@@ -27,8 +27,8 @@ const scrollToTop = () => {
 <template>
     <div class="body">
 
-        <div class="whitespace">
-        </div>
+        <!-- <div class="whitespace">
+        </div> -->
         <footer>
             <div class="box-grid">
                 <div class="contact-info">
@@ -122,8 +122,8 @@ const scrollToTop = () => {
 
         </footer>
 
-        <div class="whitespace">
-        </div>
+        <!-- <div class="whitespace">
+        </div> -->
     </div>
 </template>
 
@@ -132,7 +132,7 @@ const scrollToTop = () => {
 .body {
     background-color: #111010;
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
+    /* grid-template-columns: 1fr 3fr 1fr; */
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
 
@@ -168,7 +168,10 @@ a:hover {
     background-color: #111010;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
-}
+    max-width: 1200px;
+    margin: auto;
+    width: 100%;
+}   
 
 .contact-info {
     display: flex;
@@ -309,6 +312,8 @@ template {
     .box-grid {
         border-top-left-radius: 50px;
         border-top-right-radius: 50px;
+        max-width: 900px;
+        margin: auto;
     }
 
 }
