@@ -117,7 +117,9 @@ const scrollToTop = () => {
                     <!-- </a> -->
 
                 </div>
-
+                <div class="developers">
+                    <p>Crafted with 💓 by Shamil & Saleel</p>
+                </div>
             </div>
 
         </footer>
@@ -129,6 +131,16 @@ const scrollToTop = () => {
 
 
 <style scoped>
+.developers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 5px;
+    padding-top: 10px;
+    border-top: 1px solid #fff;
+}
+
 .body {
     background-color: #111010;
     display: grid;
@@ -171,7 +183,7 @@ a:hover {
     max-width: 1200px;
     margin: auto;
     width: 100%;
-}   
+}
 
 .contact-info {
     display: flex;
@@ -434,6 +446,10 @@ template {
         border-top-right-radius: 50px;
         padding-top: 20px;
         padding-left: 20px;
+    }
+
+    p {
+        font-size: 13px;
     }
 }
 </style>

@@ -41,23 +41,54 @@ const navigateToForm = () => {
 //   window.location.href = "https://www.google.com"; 
 // };
 
+// const isEventFinished = ref(false); // Set to true when event is finished
+// const isEventFinishedOverlay = ref(true); // Set to false to hide the overlay
+// setTimeout(() => {
+//   isEventFinished.value = true;
+// }, 1000);
+// const closeAlert = () => {
+//   isEventFinished.value = false;
+//   isEventFinishedOverlay.value = false;
+// };
 
-onMounted(() => {
-  // Optional: Disable animation on subsequent route changes
-  shouldAnimate.value = false;
-});
+// const navigateToWinners = () => {
+//   // Navigate to winners page
+//   router.push('/winners');
+// };
+
+// const navigateToProjects = () => {
+//   // Navigate to projects page
+//   router.push('/projects');
+// };
+
+// onMounted(() => {
+//   // Optional: Disable animation on subsequent route changes
+//   shouldAnimate.value = false;
+// });
+
 </script>
 <template>
- <div class="fade-container">
+  <div class="fade-container">
     <!-- <router-link to="/Form">Form</router-link> -->
+    <!-- <div class="alert-overlay" v-if="isEventFinishedOverlay">
+    <div class="alert" ref="alert" v-if="isEventFinished">
+      <button @click="closeAlert" class="close-button">&times;</button>
+      <h2>Event is finished!</h2>
+      <p>Show winners or projects here</p>
+      <div class="button-container">
+        <button @click="navigateToWinners" class="navigate-button">Winners</button>
+        <button @click="navigateToProjects" class="navigate-button">Projects</button>
+      </div>
+    </div>
+  </div> -->
 
     <Top />
     <Content />
     <Explore />
-    <Participate /> 
+    <Participate />
     <ProjectCard />
-     <Footer />
-     <!-- <button @click="scrollToTop" class="back-to-top" v-show="shouldShowBackToTop">
+    <Footer />
+    <!-- <button @click="scrollToTop" class="back-to-top" v-show="shouldShowBackToTop">
       Back to Top
     </button> -->
     <!-- <button @click="navigateToNotion">Notion</button> -->
@@ -73,9 +104,74 @@ onMounted(() => {
   from {
     opacity: 0.1;
   }
+
   to {
     opacity: 1;
   }
+}
+.alert-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.alert {
+  background-color: #fff;
+  color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+  position: relative;
+  animation: slideIn 0.8s ease-out;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(-300px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  color: #333;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.button-container {
+  margin-top: 20px;
+}
+
+.navigate-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 16px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.navigate-button:hover {
+  background-color: #0056b3;
 }
 /* .back-to-top {
   position: fixed;

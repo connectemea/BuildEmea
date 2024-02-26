@@ -89,6 +89,11 @@ h1 {
     .winners {
         border-top-right-radius: 0px;
         border-bottom-right-radius: 50px;
+        min-width: 320px;
+
+    }
+    .projects{
+        min-width: 320px;
     }
 }
 </style>

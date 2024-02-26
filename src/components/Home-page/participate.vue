@@ -6,7 +6,8 @@
         <div class="section" id="participate">
             <div class="card">
                 <div class="overlay">
-
+                </div>
+                <div class="overlay">
                 </div>
                 <!-- <img src="../../images/participate-image.png" class="participate-image" /> -->
                 <div class="card-contnet">
@@ -95,7 +96,7 @@
     right: 0px;
     bottom: 0px;
     border-radius: 60px;
-    background-color: #FF005C;
+    background-color: #ff005d;
     opacity: 0.3;
 }
 

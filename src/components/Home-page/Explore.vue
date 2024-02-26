@@ -229,7 +229,9 @@ hr {
    overflow: hidden;
    max-width: 560px;
    max-height: 500px;
-
+   width: 100%;
+   margin: auto;
+   height: 100%;
 }
 
 .tech-video {
@@ -296,14 +298,18 @@ hr {
 }
 
 @media (max-width: 400px) {
-  
+   .tech-image {
+      width: 340px;
+   }
    .tech-logo {
-      border-radius: 10px;
-      height: fit-content;
-      overflow: hidden;
-      width: 330px;
-      margin: auto;
+      width: 320px;
    }
 
+}
+@media (max-width: 370px) {
+   .tech-logo {
+      border-radius: 10px;
+      width: 300px;
+   }
 }
 </style>

@@ -17,6 +17,7 @@
                         class="router-link">Explore</router-link>
                     <router-link to="schedule" class="router-link">Schedule</router-link>
                     <router-link to="projects" class="router-link">Projects</router-link>
+                    <router-link to="winners" class="router-link">Winners</router-link>
                     <router-link to="#participate" @click="scrollToSection('#participate')"
                         class="router-link">Participate</router-link>
                 </div>
@@ -167,6 +168,7 @@ export default {
 
 .header-right {
     flex: 1;
+    flex-grow: calc(1 + 1);
     display: flex;
     justify-content: space-between;
     align-items: center;
