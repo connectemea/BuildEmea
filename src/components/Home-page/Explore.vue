@@ -72,7 +72,7 @@
             </div>
             <div class="tech-image">
                <div class="tech-logo">
-                  <video class="tech-video" loop autoplay muted>
+                  <!-- <video class="tech-video" loop autoplay muted>
                      <source src="../../assets/coding.mp4" type="video/mp4">
                      <img src="../../images/tech-image.png" class="tech-logo" />
                   </video>
@@ -83,8 +83,8 @@
                   <video class="tech-video responsive" loop autoplay muted>
                      <source src="../../assets/coding.mp4" type="video/mp4">
                      <img src="../../images/tech-image.png" class="tech-logo" />
-                  </video>
-
+                  </video> -->
+                  <img src="../../images/explore.webp" class="tech-logo" />
                </div>
             </div>
 
@@ -229,8 +229,7 @@ hr {
    overflow: hidden;
    max-width: 560px;
    max-height: 500px;
-   width: 100%;
-   margin: auto;
+   width: 95%;
    height: 100%;
 }
 
@@ -278,7 +277,7 @@ hr {
    .tech-image {
       padding: 10px;
       height: 300px;
-      width: 380px;
+      width: 400px;
       margin: auto;
       padding-top: 0;
    }
@@ -293,7 +292,9 @@ hr {
    }
 
    .tech-logo {
-      width: 360px;
+      width: 100%;
+      height: 250px;
+      margin: auto;
    }
 }
 

@@ -23,6 +23,10 @@ const scrollToTop = () => {
     });
 
 };
+
+const HandleProfile = (link) => {
+  window.open(link, '_blank');
+};
 </script>
 <template>
     <div class="body">
@@ -118,7 +122,7 @@ const scrollToTop = () => {
 
                 </div>
                 <div class="developers">
-                    <p>Crafted with 💓 by Shamil & Saleel</p>
+                    <p>Crafted with 💓 by <span class="dev-name" @click="HandleProfile('https://www.linkedin.com/in/muhammed-shamil-65878227a/')"> Shamil</span > &  <span class="dev-name" @click="HandleProfile('https://www.linkedin.com/in/muhammed-saleel-cp-84064524b/')"> Saleel</span> </p>
                 </div>
             </div>
 
@@ -139,6 +143,16 @@ const scrollToTop = () => {
     margin-top: 5px;
     padding-top: 10px;
     border-top: 1px solid #fff;
+}
+.dev-name{
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+}
+.dev-name:hover{
+    color: #ff005dd3;
+
 }
 
 .body {
