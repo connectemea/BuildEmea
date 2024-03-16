@@ -18,7 +18,7 @@ onMounted(() => {
   <div class="fade-container">
     <header>
       <router-link to="/">
-        <img src="../images/header-logo.png" class="logo" />
+        <img src="../images/header-logo.webp" class="logo" />
 
       </router-link>
 
@@ -125,7 +125,7 @@ z-index: 1;
   right: 10px;
   bottom: 0px;
   width: 60%; /* Adjust the width of the background */
-  background-image: url('../images/buildEMEAtext-logo.png'); /* Set your desired background color */
+  background-image: url('../images/buildEMEAtext-logo.webp'); /* Set your desired background color */
   background-repeat: no-repeat;
   background-position: right;
   background-size: contain;
@@ -198,7 +198,7 @@ z-index: 1;
   right: 10px;
   bottom: 0px;
   width: 10%; /* Adjust the width of the background */
-  background-image: url('../images/buildEMEtext-respo.png'); /* Set your desired background image */
+  background-image: url('../images/buildEMEtext-respo.webp'); /* Set your desired background image */
   background-repeat: repeat-y;
   background-position: right;
   margin: 80px 30px;

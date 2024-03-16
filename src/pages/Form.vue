@@ -10,7 +10,7 @@
       <header>
         <router-link to="/">
 
-          <img src="../images/header-logo.png" class="logo" />
+          <img src="../images/header-logo.webp" class="logo" />
         </router-link>
       </header>
       <iframe title="Airtable Embed" class="airtable-embed" :src="airtableEmbedSrc" frameborder="0" allowfullscreen

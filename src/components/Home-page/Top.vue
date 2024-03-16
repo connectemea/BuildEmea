@@ -7,7 +7,7 @@
             <header class="header">
                 <div class="header-left">
                     <router-link to="#">
-                        <img class="header-left-logo" src="../../images/header-logo-new.png" alt="" />
+                        <img class="header-left-logo" src="../../images/header-logo-new.webp" alt="" />
                     </router-link>
 
                 </div>

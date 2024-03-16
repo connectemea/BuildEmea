@@ -41,9 +41,9 @@
 
             </div>
             <div class="community">
-                <div><img src="../../images/tinkerhub-logo.png" class="community-logo" /></div>
-                <div><img src="../../images/connect-logo.png" class="community-logo" /></div>
-                <div><img src="../../images/iedc-logo.png" class="community-logo" /></div>
+                <div><img src="../../images/tinkerhub-logo.webp" class="community-logo" /></div>
+                <div><img src="../../images/connect-logo.webp" class="community-logo" /></div>
+                <div><img src="../../images/iedc-logo.webp" class="community-logo" /></div>
             </div>
         </div>
 
@@ -82,7 +82,7 @@
     width: 100%;
     position: relative;
     height: 450px;
-    background-image: url("../../images/participate-image.png");
+    background-image: url("../../images/participate-image.webp");
     background-size: cover;
     border-radius: 60px;
 
@@ -258,7 +258,7 @@
         width: 100%;
         position: relative;
         height: 300px;
-        background-image: url("../../images/participate-image.png");
+        background-image: url("../../images/participate-image.webp");
         background-size: cover;
     }
 

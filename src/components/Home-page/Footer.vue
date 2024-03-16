@@ -69,7 +69,7 @@ const HandleProfile = (link) => {
                     </div>
                     <div class="logo">
 
-                        <img src="../../images/header-logo-new.png" alt="" />
+                        <img src="../../images/header-logo-new.webp" alt="" />
                         <div>
                             <button @click="scrollToTop" v-show="shouldShowBackToTop" class="back-to-top-button">
 
@@ -197,6 +197,7 @@ a:hover {
     max-width: 1200px;
     margin: auto;
     width: 100%;
+    min-height: 300px;
 }
 
 .contact-info {

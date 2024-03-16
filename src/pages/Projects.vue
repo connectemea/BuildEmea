@@ -18,7 +18,7 @@ const handleLink = (link) => {
         <header>
 
             <router-link to="/" class="image-logo">
-                <img src="../images/header-logo.png" class="logo" />
+                <img src="../images/header-logo.webp" class="logo" />
 
             </router-link>
             <h1 class="heading">
@@ -249,7 +249,7 @@ hr {
     bottom: 0px;
     width: 60%;
     /* Adjust the width of the background */
-    background-image: url('../images/buildEMEAtext-logo.png');
+    background-image: url('../images/buildEMEAtext-logo.webp');
     /* Set your desired background color */
     background-repeat: no-repeat;
     background-position: right;
@@ -275,7 +275,7 @@ hr {
         bottom: 0px;
         width: 10%;
         /* Adjust the width of the background */
-        background-image: url('../images/buildEMEtext-respo.png');
+        background-image: url('../images/buildEMEtext-respo.webp');
         /* Set your desired background image */
         background-repeat: repeat-y;
         background-position: right;

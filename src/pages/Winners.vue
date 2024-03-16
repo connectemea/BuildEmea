@@ -27,7 +27,7 @@ const HandleProfile = (link) => {
     <header>
 
       <router-link to="/" class="image-logo">
-        <img src="../images/header-logo.png" class="logo" />
+        <img src="../images/header-logo.webp" class="logo" />
 
       </router-link>
       <h1 class="heading">
