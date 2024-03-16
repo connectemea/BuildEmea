@@ -49,7 +49,7 @@
                 </div>
             </div>
             <div>
-                <img src="../../images/image-game.png" alt="" class="game-image" />
+                <img src="../../images/image-game.webp" alt="" class="game-image" />
 
             </div>
         </div>
