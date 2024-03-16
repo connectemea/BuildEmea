@@ -12,7 +12,7 @@
                 </h1>
             </div>
             <div class="center-section">
-                <div class="mockup"><img src="../../images//MOCKUP-ipad.png" class="ipad-image" /></div>
+                <div class="mockup"><img src="../../images//MOCKUP-ipad.webp" class="ipad-image" /></div>
                 <div>
                     <p>
                         <b>BuildEMEA</b> , organised by  <b>Connect</b> in collaboration with  <b>IEDC</b> and  <b>TinkerHub</b>, is the first ever

@@ -38,7 +38,7 @@
                 </div>
             </header>
             <div class="center-section">
-                <img class="head-logo" src="../../images/buildEMEA-1.png" />
+                <img class="head-logo" src="../../images/buildEMEA-1.webp" />
                 <div class="location">
                     <img src="../../images/Vectorlocation.svg" alt="" class="location-logo" />
                     <p>EMEA College of Arts and Science</p>
