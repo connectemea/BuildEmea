@@ -1,9 +1,9 @@
 <template>
   <div class="fade-container">
     <div class="video-container">
-      <video autoplay loop muted>
+      <!-- <video autoplay loop muted>
         <source src="../../public/black.mp4" type="video/mp4">
-      </video>
+      </video> -->
     </div>
 
     <div style="height: 100vh;" class="body">
